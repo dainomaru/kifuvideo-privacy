@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プライバシーポリシー — 動画まるごと棋譜化</title>
+<style>
+  :root{
+    --bg:#fbfaf7; --fg:#22201c; --muted:#6b6660; --rule:#e2ddd4;
+    --accent:#7a5c2e; --card:#fff; --mark:#f3ede1;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#171614; --fg:#ece8e1; --muted:#a29c93; --rule:#33302b;
+      --accent:#d8b877; --card:#1f1e1b; --mark:#2a2723;
+    }
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--fg);
+    font-family:"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,system-ui,sans-serif;
+    line-height:1.85; font-size:16px;
+  }
+  .wrap{max-width:46rem; margin:0 auto; padding:2.5rem 1.25rem 5rem}
+  header{border-bottom:2px solid var(--accent); padding-bottom:1.25rem; margin-bottom:2rem}
+  .kicker{font-size:.8rem; letter-spacing:.12em; color:var(--muted); margin:0 0 .4rem}
+  h1{font-size:1.65rem; margin:0 0 .5rem; line-height:1.35; text-wrap:balance}
+  .app{font-size:1rem; color:var(--muted); margin:0}
+  .updated{font-size:.85rem; color:var(--muted); margin:.75rem 0 0}
+  h2{
+    font-size:1.1rem; margin:2.5rem 0 .75rem; padding-top:1.25rem;
+    border-top:1px solid var(--rule); text-wrap:balance;
+  }
+  h3{font-size:.98rem; margin:1.5rem 0 .5rem; color:var(--accent)}
+  p{margin:.75rem 0}
+  ul{margin:.75rem 0; padding-left:1.3rem}
+  li{margin:.35rem 0}
+  strong{font-weight:700}
+  .lead{
+    background:var(--card); border:1px solid var(--rule); border-left:4px solid var(--accent);
+    padding:1.1rem 1.25rem; border-radius:.35rem; margin:0 0 1rem;
+  }
+  .lead p{margin:.5rem 0}
+  .lead p:first-child{margin-top:0}
+  .lead p:last-child{margin-bottom:0}
+  .tablewrap{overflow-x:auto; margin:1rem 0}
+  table{border-collapse:collapse; width:100%; font-size:.93rem; min-width:23rem}
+  th,td{border:1px solid var(--rule); padding:.55rem .7rem; text-align:left; vertical-align:top}
+  th{background:var(--mark); font-weight:700}
+  code{background:var(--mark); padding:.1rem .35rem; border-radius:.2rem; font-size:.9em}
+  .mail{font-size:1.05rem}
+  a{color:var(--accent)}
+  footer{
+    margin-top:3rem; padding-top:1.25rem; border-top:1px solid var(--rule);
+    font-size:.85rem; color:var(--muted);
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <p class="kicker">PRIVACY POLICY</p>
+  <h1>プライバシーポリシー</h1>
+  <p class="app">動画まるごと棋譜化（Android アプリ）</p>
+  <p class="updated">最終更新日: 2026年9月21日</p>
+</header>
+
+<div class="lead">
+  <p><strong>本アプリは、撮影した動画を外部へ送信しません。</strong>解析はすべて端末の中で行います。アカウント登録も不要で、利用者を識別する情報を収集しません。</p>
+  <p><strong>例外は1つだけです。</strong>利用者が「駒種のクラウド確認」を自分で有効にし、さらに画面上のボタンを押したときに限り、盤の1マスを切り出した小さな画像が外部のサーバへ送信されます。<strong>既定では無効です。</strong></p>
+</div>
+
+<h2>1. 収集しない情報</h2>
+<p>本アプリは次のいずれも収集しません。</p>
+<ul>
+  <li>氏名・メールアドレス・電話番号などの個人を識別する情報</li>
+  <li>端末の識別子（広告ID、端末ID など）</li>
+  <li>位置情報</li>
+  <li>連絡先、通話履歴、SMS</li>
+  <li>利用状況の統計、クラッシュレポート、行動履歴</li>
+</ul>
+<p><strong>広告は表示しません。</strong>解析ツールも組み込んでいません。</p>
+
+<h2>2. 端末内で扱う情報</h2>
+<div class="tablewrap">
+<table>
+  <thead><tr><th>扱うもの</th><th>目的</th><th>保存先</th></tr></thead>
+  <tbody>
+    <tr><td>利用者が選んだ動画</td><td>盤面の解析</td><td><strong>端末内のみ。</strong>読み取るだけで複製も保存もしません</td></tr>
+    <tr><td>解析で得た棋譜（KIF 等）</td><td>利用者が保存・共有するため</td><td>利用者が指定した端末内の場所</td></tr>
+    <tr><td>診断ファイル</td><td>認識がうまくいかないときの原因調査</td><td>棋譜と同じ場所</td></tr>
+    <tr><td>画面の設定</td><td>次回の利用時に引き継ぐ</td><td>端末内（localStorage）</td></tr>
+  </tbody>
+</table>
+</div>
+<p><strong>これらが端末の外へ出ることはありません。</strong>棋譜や診断ファイルを他者へ渡すかどうかは、利用者が共有操作を行ったときにのみ決まります。</p>
+
+<h2>3. 「駒種のクラウド確認」について</h2>
+<p>将棋の盤面は、駒がどこにあるかだけでは<strong>駒を打った手</strong>と<strong>成った手</strong>を区別できません。この2つに限り、駒の見た目を読む必要があります。本アプリは端末内の判定で処理しますが、判断が難しい手について、利用者の希望により外部の AI に問い合わせる機能を備えています。</p>
+
+<h3>送信されるもの</h3>
+<ul>
+  <li><strong>盤の1マスを切り出した画像</strong>（およそ 150 × 150 画素、数KB）</li>
+  <li>その画像だけです。動画そのもの、棋譜、対局者名、端末の情報は送信しません。</li>
+</ul>
+
+<h3>送信される条件（すべて満たしたときだけ）</h3>
+<ul>
+  <li>利用者が設定画面で「駒種のクラウド確認」を<strong>有効にしている</strong>（既定は無効）</li>
+  <li>利用者が API キーを自分で入力している、または中継サーバを設定している</li>
+  <li>利用者が画面上の<strong>確認ボタンを押した</strong></li>
+</ul>
+<p><strong>自動では送信されません。</strong>バックグラウンドで送ることもありません。</p>
+
+<h3>送信先</h3>
+<ul>
+  <li>利用者が自分の API キーを使う場合: Anthropic 社の API（<code>api.anthropic.com</code>）</li>
+  <li>中継サーバを使う場合: 利用者が設定したサーバ</li>
+</ul>
+<p>送信先での取り扱いは、それぞれの事業者のプライバシーポリシーに従います。<strong>本アプリの開発者は、送信された画像を受け取りません。</strong></p>
+
+<h3>API キーの保管</h3>
+<p>利用者が入力した API キーは、<strong>端末内にのみ保存</strong>されます（localStorage）。開発者を含む第三者へ送信されることはありません。アプリを削除すると消えます。</p>
+
+<h2>4. 権限</h2>
+<div class="tablewrap">
+<table>
+  <thead><tr><th>権限</th><th>用途</th></tr></thead>
+  <tbody>
+    <tr><td>動画の読み取り（<code>READ_MEDIA_VIDEO</code> ほか）</td><td>利用者が選んだ動画を解析するため</td></tr>
+    <tr><td>インターネット（<code>INTERNET</code>）</td><td>アプリ内部の通信、および上記のクラウド確認を有効にした場合のみ</td></tr>
+  </tbody>
+</table>
+</div>
+<p><strong>カメラ権限は要求しません。</strong>「その場で撮る」は端末のカメラアプリに処理を任せます。</p>
+
+<h2>5. 子どもの利用について</h2>
+<p>本アプリは特定の年齢層を対象としていません。個人情報を収集しないため、子どもから情報を集めることもありません。</p>
+
+<h2>6. 第三者提供</h2>
+<p>本アプリは、利用者の情報を第三者へ提供・販売しません。第3項のクラウド確認は、<strong>利用者自身の操作による送信</strong>であり、開発者による提供ではありません。</p>
+
+<h2>7. 変更</h2>
+<p>本ポリシーを変更する場合は、本ページを更新し、最終更新日を改めます。送信するデータの種類や条件を変える変更は、アプリの更新時に画面でお知らせします。</p>
+
+<h2>8. お問い合わせ</h2>
+<p>本アプリまたは本ポリシーについてのご質問は、下記までご連絡ください。</p>
+<p class="mail"><a href="mailto:daibo@dnnet.co.jp">daibo@dnnet.co.jp</a></p>
+
+<footer>
+  動画まるごと棋譜化 — Android アプリ<br>
+  パッケージ名: <code>com.dainomaru.kifuvideo</code>
+</footer>
+
+</div>
+</body>
+</html>
